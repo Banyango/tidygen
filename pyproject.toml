@@ -1,0 +1,20 @@
+[project]
+name = "tidygen"
+version = "0.0.2"
+description = "A tiny CLI for creating a clean project structure."
+authors = [
+    {name = "Kyle.Reczek",email = "kyle@banyango.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11.0,<4.0"
+dependencies = [
+    "click (>=8.1.8,<9.0.0)"
+]
+
+[tool.poetry.scripts]
+tidygen = "tidygen.main:entry_point"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
